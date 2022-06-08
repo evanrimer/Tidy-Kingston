@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>breakout_board_v1</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="breakout-board-v1">Breakout Board V1</h2>
+<p>The Raspberry PI is placed upside down onto the breakout board. This flips the conventional location of pin numbering. On the breakout board the top right slot is mapped to Pin 1.</p>
+<p><strong>Relay GPIO Pins</strong></p>
+<ul>
+<li>Pin 11 --&gt; Controls R1</li>
+<li>Pin 13 --&gt; Controls R2</li>
+<li>Pin 15 --&gt; Controls R3</li>
+<li>Pin 16 --&gt; Controls R4</li>
+<li>Pin 22 --&gt; Controls R5</li>
+<li>Pin 18 --&gt; Controls R6</li>
+</ul>
+<p><strong>I2C Pins</strong><br>
+Pin 3 (SDA)<br>
+Pin 5 (SCL)<br>
+I2C pins are extended to SDA1 - SDA4 and SCL1 - SCL4<br>
+<strong>UART Pins</strong><br>
+Pin 8 TX<br>
+Pin 10 RX<br>
+UART pins are extended to RX1 and TX1</p>
+<p><strong>BOM</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Description</th>
+<th>Quantity</th>
+<th>Datasheet Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SKE15C-24</td>
+<td>Mean Well 24V Converter</td>
+<td>1</td>
+<td><a href="https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/Ske15/SKE15-spec.pdf">SKE15C-24</a></td>
+</tr>
+<tr>
+<td>SKA20B-12</td>
+<td>Mean Well 12V Converter</td>
+<td>1</td>
+<td><a href="https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/SKA20/SKA20-spec.pdf"> SKA20B-12</a></td>
+</tr>
+<tr>
+<td>SKMW20G-05</td>
+<td>Mean Well 5V Converter</td>
+<td>1</td>
+<td><a href="https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/SKMW20/SKMW20,DKMW20-spec.pdf">SKMW20G-05</a></td>
+</tr>
+<tr>
+<td>SRD-05VDC-SL-C</td>
+<td>Songle 5V Relay</td>
+<td>6</td>
+<td><a href="https://datasheetspdf.com/pdf-file/720556/Songle/SRD-05VDC-SL-C/1">SRD-05VDC-SL-C </a></td>
+</tr>
+<tr>
+<td>BOB-12009</td>
+<td>Logic Level Convertor (Convert 3.3V output from RPi GPIO to 5V for use in relays)</td>
+<td>2</td>
+<td><a href="https://media.digikey.com/pdf/Data%20Sheets/Sparkfun%20PDFs/Bi-Directional-Logic-Level_HookupGuide.pdf">BOB-12009</a></td>
+</tr>
+<tr>
+<td>TB006-508-02BE</td>
+<td>Two Screw Head Terminal (Used to connect 5V, 24V, 48V power sources)</td>
+<td>3</td>
+<td><a href="https://www.cuidevices.com/product/resource/tb006-508.pdf">TB006-508-02BE</a></td>
+</tr>
+<tr>
+<td>TB006-508-06BE</td>
+<td>Six Screw Head Terminal (Used for temporary connection to output of relays)</td>
+<td>1</td>
+<td><a href="https://www.cuidevices.com/product/resource/tb006-508.pdf">TB006-508-06BE</a></td>
+</tr>
+<tr>
+<td>920-0135-01</td>
+<td>40 position female header for RPi to be plugged into</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>5-146261-1</td>
+<td>2 position header</td>
+<td>24</td>
+<td><a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=146261&amp;DocType=Customer%20Drawing&amp;DocLang=English">5-146261-1</a></td>
+</tr>
+<tr>
+<td>STC02SYAN</td>
+<td>Jumper Shorting Tin (short the desired header for different output voltages of the relays)</td>
+<td>4</td>
+<td><a href="https://drawings-pdf.s3.amazonaws.com/11134.pdf">STC02SYAN</a></td>
+</tr>
+<tr>
+<td>Relay Diode (PN2222A PBFREE)</td>
+<td></td>
+<td>6</td>
+<td><a href="https://my.centralsemi.com/datasheets/PN2221-2222A.PDF">PN2222A PBFREE</a></td>
+</tr>
+<tr>
+<td>Relay Resistor</td>
+<td>1k Ohms</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>LED Resistor</td>
+<td></td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td>Relay LED</td>
+<td>Will turn on, if connected 5V source to relay is on</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>Status LED</td>
+<td>Connected to Pin 40 of RPi</td>
+<td>1</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+</body>
+
+</html>
